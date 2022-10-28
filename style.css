@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+body {
+    background-color: #13000A;
+}
+
+header {
+    font-family: 'Gemunu Libre', sans-serif;;
+    color: white;
+    size: 24px;
+}
