@@ -3,20 +3,82 @@ body {
     background-color: #001929;
 }
 
-header {
+#homeHeader {
     display: flex;
     background-color: #8fd4ff;
     border-bottom: 5px solid #ff4557;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
     font-family: 'Gemunu Libre', sans-serif;;
 }
 
-.title {
-    color: #001929;
-    size: 24px;
+#telescopeHeader {
+    display: flex;
+    background-color: #8fd4ff;
+    border-bottom: 5px solid #B22EFF;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: 'Gemunu Libre', sans-serif;;
 }
-.links {
-    display: inline;
-    font-size: 20px;
+
+#acessoryHeader {
+    display: flex;
+    background-color: #8fd4ff;
+    border-bottom: 5px solid #FFEE57;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: 'Gemunu Libre', sans-serif;;
+}
+
+#cameraHeader {
+    display: flex;
+    background-color: #8fd4ff;
+    border-bottom: 5px solid #ffffff;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: 'Gemunu Libre', sans-serif;;
+}
+
+.title a{
+    color: #001929;
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    justify-items: right;
+    padding: 10px 30px;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+li a {
+    color: #001929;
+    display:inline-block;
+    padding: 10px;
+    font-family: 'Gemunu Libre', sans-serif;;
+    text-decoration: none;
+}
+
+li:hover {
+    font-weight: bold;
 }
