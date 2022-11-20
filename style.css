@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
     background-color: #001929;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
 }
 
 #homeHeader {
     display: flex;
     background-color: #8fd4ff;
-    border-bottom: 5px solid #ff4557;
     height: 80px;
     width: 100%;
     align-items: center;
@@ -16,43 +20,17 @@ body {
     font-family: 'Gemunu Libre', sans-serif;;
 }
 
-#telescopeHeader {
-    display: flex;
-    background-color: #8fd4ff;
-    border-bottom: 5px solid #B22EFF;
-    height: 80px;
+@media only screen and (max-width: 775px) {
+  #homeHeader {
+    height: 200px;
     width: 100%;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px;
     font-family: 'Gemunu Libre', sans-serif;;
-}
-
-#acessoryHeader {
-    display: flex;
-    background-color: #8fd4ff;
-    border-bottom: 5px solid #FFEE57;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    font-family: 'Gemunu Libre', sans-serif;;
-}
-
-#cameraHeader {
-    display: flex;
-    background-color: #8fd4ff;
-    border-bottom: 5px solid #ffffff;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    font-family: 'Gemunu Libre', sans-serif;;
+  }
 }
 
 .title a{
@@ -62,7 +40,7 @@ body {
     text-decoration: none;
 }
 
-ul {
+.navList {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -82,3 +60,45 @@ li a {
 li:hover {
     font-weight: bold;
 }
+
+#photoGallery {
+  background-color: white;
+  margin: 10px;
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  #photoGallery {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 2(repeat,auto);
+    align-content: center;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  #photoGallery {
+    grid-template-columns: auto auto;
+    grid-template-rows: 3(repeat,auto);
+    align-content: center;
+  }
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.tableList {
+    list-style: disc;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #8fd4ff;
+    height: 80px;
+    color: #001929;
+}
+
+
+
+
